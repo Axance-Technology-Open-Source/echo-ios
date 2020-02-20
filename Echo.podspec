@@ -36,17 +36,17 @@ Pod::Spec.new do |s|
 
   s.subspec "Moya14-beta" do |ss|
     ss.dependency 'Moya/Core', '~> 14.0.0-beta.0'
-    ss.source_files  = "Echo/*.{swift}"
+    ss.source_files  = "Echo/*.{swift}", "Echo/Moya/*.{swift}"
     ss.ios.deployment_target = '10.0'
   end
 
   s.subspec "Moya13" do |ss|
     ss.dependency 'Moya/Core', '~> 13.0'
-    ss.source_files  = "Echo/*.{swift}"
+    ss.source_files  = "Echo/*.{swift}", "Echo/Moya/*.{swift}"
   end
 
   s.subspec "Moya12" do |ss|
     ss.dependency 'Moya/Core', '~> 12.0'
-    ss.source_files  = "Echo/*.{swift}"
+    ss.source_files  = "Echo/*.{swift}", "Echo/Moya/*.{swift}"
   end
 end
