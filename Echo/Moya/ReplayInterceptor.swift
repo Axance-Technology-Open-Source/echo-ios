@@ -18,11 +18,28 @@ class ReplayInterceptor: PluginType {
     }
     
     public func process(_ result: Result<Moya.Response, MoyaError>, target: TargetType) -> Result<Moya.Response, MoyaError> {
-        guard let request = request, let data = EchoCore.replay(request: request) else {
+        guard let request = request, let mockData = request.mockFileData else {
             return result
         }
         
-        let processedResponse = Response(statusCode: 200, data: data, request: request, response: nil)
+        let processedResponse = Response(statusCode: 200, data: mockData, request: request, response: nil)
         return .success(processedResponse)
+    }
+}
+
+private extension URLRequest {
+    
+    var mockFileData: Data? {
+        let mockFileUrl = mockFileName?.bundleMockFileURL != nil ?
+            mockFileName?.bundleMockFileURL :
+            mockFileName?.mockFileUrl
+        
+        guard let fileUrl = mockFileUrl else {
+            return nil
+        }
+        
+        print("Echo: read mock json file from \(fileUrl.path)")
+        
+        return try? Data(contentsOf: fileUrl)
     }
 }

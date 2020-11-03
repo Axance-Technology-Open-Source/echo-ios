@@ -10,12 +10,15 @@ import Foundation
 import Moya
 
 public extension EchoConfig {
-    func getPlugin() -> PluginType {
+    
+    var plugin: PluginType {
         switch EchoConfig.shared.type {
         case .record:
             return RecordInterceptor()
+            
         case .replay:
             return ReplayInterceptor()
+            
         case .none:
             return EmptyPlugin()
         }
