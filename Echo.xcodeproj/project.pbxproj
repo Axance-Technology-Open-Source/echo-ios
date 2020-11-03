@@ -7,30 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A264D7423FD97D400D2A91B /* MockFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A264D7323FD97D400D2A91B /* MockFile.swift */; };
 		3A264D7623FDA15100D2A91B /* EchoConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A264D7523FDA15100D2A91B /* EchoConfig.swift */; };
-		3A264D7823FDA16A00D2A91B /* EchoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A264D7723FDA16A00D2A91B /* EchoType.swift */; };
-		3A264D7A23FDAB2400D2A91B /* EchoCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A264D7923FDAB2400D2A91B /* EchoCore.swift */; };
 		3A264D7F23FE90D500D2A91B /* AlamofireEchoSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A264D7E23FE90D500D2A91B /* AlamofireEchoSessionDelegate.swift */; };
 		3A6BD63C220450570050CE90 /* RecordInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6BD63B220450570050CE90 /* RecordInterceptor.swift */; };
 		3A93A7FC221AFEEA00947D0F /* ReplayInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A93A7FB221AFEEA00947D0F /* ReplayInterceptor.swift */; };
 		3A93A802221AFFC500947D0F /* MoyaEchoConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A93A801221AFFC500947D0F /* MoyaEchoConfig.swift */; };
-		3A93A804221AFFC900947D0F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A93A803221AFFC900947D0F /* Utils.swift */; };
+		3A93A804221AFFC900947D0F /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A93A803221AFFC900947D0F /* FileUtils.swift */; };
 		3D9A94514B861CA3229DE828 /* libPods-Echo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47629CCD633B3AB615508E0A /* libPods-Echo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A264D7323FD97D400D2A91B /* MockFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFile.swift; sourceTree = "<group>"; };
 		3A264D7523FDA15100D2A91B /* EchoConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoConfig.swift; sourceTree = "<group>"; };
-		3A264D7723FDA16A00D2A91B /* EchoType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoType.swift; sourceTree = "<group>"; };
-		3A264D7923FDAB2400D2A91B /* EchoCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoCore.swift; sourceTree = "<group>"; };
 		3A264D7E23FE90D500D2A91B /* AlamofireEchoSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireEchoSessionDelegate.swift; sourceTree = "<group>"; };
 		3A6BD63022044E400050CE90 /* Echo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Echo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6BD63422044E400050CE90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A6BD63B220450570050CE90 /* RecordInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordInterceptor.swift; sourceTree = "<group>"; };
 		3A93A7FB221AFEEA00947D0F /* ReplayInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplayInterceptor.swift; sourceTree = "<group>"; };
 		3A93A801221AFFC500947D0F /* MoyaEchoConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaEchoConfig.swift; sourceTree = "<group>"; };
-		3A93A803221AFFC900947D0F /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		3A93A803221AFFC900947D0F /* FileUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
 		47629CCD633B3AB615508E0A /* libPods-Echo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Echo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		934A77C6373A4F3BCC139CA7 /* Pods-Echo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Echo.debug.xcconfig"; path = "Target Support Files/Pods-Echo/Pods-Echo.debug.xcconfig"; sourceTree = "<group>"; };
 		DC57C477E261EFFE33ACF710 /* Pods-Echo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Echo.release.xcconfig"; path = "Target Support Files/Pods-Echo/Pods-Echo.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,11 +91,8 @@
 			children = (
 				3A264D7D23FE90B600D2A91B /* Alamofire */,
 				3A264D7223FD956900D2A91B /* Moya */,
-				3A93A803221AFFC900947D0F /* Utils.swift */,
-				3A264D7323FD97D400D2A91B /* MockFile.swift */,
 				3A264D7523FDA15100D2A91B /* EchoConfig.swift */,
-				3A264D7723FDA16A00D2A91B /* EchoType.swift */,
-				3A264D7923FDAB2400D2A91B /* EchoCore.swift */,
+				3A93A803221AFFC900947D0F /* FileUtils.swift */,
 				3A6BD63422044E400050CE90 /* Info.plist */,
 			);
 			path = Echo;
@@ -221,14 +212,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A264D7623FDA15100D2A91B /* EchoConfig.swift in Sources */,
-				3A264D7A23FDAB2400D2A91B /* EchoCore.swift in Sources */,
 				3A264D7F23FE90D500D2A91B /* AlamofireEchoSessionDelegate.swift in Sources */,
-				3A264D7823FDA16A00D2A91B /* EchoType.swift in Sources */,
 				3A93A802221AFFC500947D0F /* MoyaEchoConfig.swift in Sources */,
 				3A6BD63C220450570050CE90 /* RecordInterceptor.swift in Sources */,
 				3A93A7FC221AFEEA00947D0F /* ReplayInterceptor.swift in Sources */,
-				3A93A804221AFFC900947D0F /* Utils.swift in Sources */,
-				3A264D7423FD97D400D2A91B /* MockFile.swift in Sources */,
+				3A93A804221AFFC900947D0F /* FileUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

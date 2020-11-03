@@ -20,3 +20,9 @@ public class EchoConfig {
         self.scenario = scenario
     }
 }
+
+public enum EchoType {
+    case none,
+    record,
+    replay
+}
