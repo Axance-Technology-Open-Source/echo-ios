@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "Echo"
-  s.version      = "0.0.1"
+  s.version      = "0.0.1-beta0"
 
   s.summary      = "Echo: Record & Replay JSON webservices responses easily!"
   s.description  = <<-EOS
