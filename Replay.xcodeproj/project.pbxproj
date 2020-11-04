@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		3A264D7523FDA15100D2A91B /* ReplayConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayConfig.swift; sourceTree = "<group>"; };
 		3A264D7E23FE90D500D2A91B /* AlamofireReplaySessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireReplaySessionDelegate.swift; sourceTree = "<group>"; };
-		3A6BD63022044E400050CE90 /* Echo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Echo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A6BD63022044E400050CE90 /* Replay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Replay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6BD63422044E400050CE90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A6BD63B220450570050CE90 /* RecordInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordInterceptor.swift; sourceTree = "<group>"; };
 		3A93A7FB221AFEEA00947D0F /* ReplayInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplayInterceptor.swift; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 		3A6BD63122044E400050CE90 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A6BD63022044E400050CE90 /* Echo.framework */,
+				3A6BD63022044E400050CE90 /* Replay.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,9 +120,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3A6BD62F22044E400050CE90 /* Echo */ = {
+		3A6BD62F22044E400050CE90 /* Replay */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A6BD63822044E400050CE90 /* Build configuration list for PBXNativeTarget "Echo" */;
+			buildConfigurationList = 3A6BD63822044E400050CE90 /* Build configuration list for PBXNativeTarget "Replay" */;
 			buildPhases = (
 				76411942B32452B9F2C1C029 /* [CP] Check Pods Manifest.lock */,
 				3A6BD62B22044E400050CE90 /* Headers */,
@@ -134,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = Echo;
+			name = Replay;
 			productName = MockableLib;
-			productReference = 3A6BD63022044E400050CE90 /* Echo.framework */;
+			productReference = 3A6BD63022044E400050CE90 /* Replay.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -154,7 +154,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3A6BD62A22044E400050CE90 /* Build configuration list for PBXProject "Echo" */;
+			buildConfigurationList = 3A6BD62A22044E400050CE90 /* Build configuration list for PBXProject "Replay" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -166,7 +166,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3A6BD62F22044E400050CE90 /* Echo */,
+				3A6BD62F22044E400050CE90 /* Replay */,
 			);
 		};
 /* End PBXProject section */
@@ -407,7 +407,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3A6BD62A22044E400050CE90 /* Build configuration list for PBXProject "Echo" */ = {
+		3A6BD62A22044E400050CE90 /* Build configuration list for PBXProject "Replay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A6BD63622044E400050CE90 /* Debug */,
@@ -416,7 +416,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A6BD63822044E400050CE90 /* Build configuration list for PBXNativeTarget "Echo" */ = {
+		3A6BD63822044E400050CE90 /* Build configuration list for PBXNativeTarget "Replay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A6BD63922044E400050CE90 /* Debug */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3A6BD62F22044E400050CE90"
-               BuildableName = "Echo.framework"
-               BlueprintName = "Echo"
-               ReferencedContainer = "container:Echo.xcodeproj">
+               BuildableName = "Replay.framework"
+               BlueprintName = "Replay"
+               ReferencedContainer = "container:Replay.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -51,9 +51,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3A6BD62F22044E400050CE90"
-            BuildableName = "Echo.framework"
-            BlueprintName = "Echo"
-            ReferencedContainer = "container:Echo.xcodeproj">
+            BuildableName = "Replay.framework"
+            BlueprintName = "Replay"
+            ReferencedContainer = "container:Replay.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
