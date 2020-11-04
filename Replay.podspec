@@ -32,10 +32,10 @@ Pod::Spec.new do |s|
 
   s.source_files  = "Replay/*.{swift}"
 
-  s.default_subspec = "Moya13"
+  s.default_subspec = "Moya14"
 
-  s.subspec "Moya14-beta" do |ss|
-    ss.dependency 'Moya/Core', '~> 14.0.0-beta.0'
+  s.subspec "Moya14" do |ss|
+    ss.dependency 'Moya/Core', '~> 14.0'
     ss.source_files  = "Replay/*.{swift}", "Replay/Moya/*.{swift}"
     ss.ios.deployment_target = '10.0'
   end
