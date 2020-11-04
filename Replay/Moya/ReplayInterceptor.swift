@@ -1,6 +1,6 @@
 //
 //  ReplayInterceptor.swift
-//  Echo
+//  Replay
 //
 //  Created by Charles Legrand on 01/02/2019.
 //  Copyright © 2020-present Axance Technology. All rights reserved.
@@ -38,7 +38,7 @@ private extension URLRequest {
             return nil
         }
         
-        print("Echo: read mock json file from \(fileUrl.path)")
+        print("Replay: read mock json file from \(fileUrl.path)")
         
         return try? Data(contentsOf: fileUrl)
     }

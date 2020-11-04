@@ -1,6 +1,6 @@
 //
 //  RecordInterceptor.swift
-//  Echo
+//  Replay
 //
 //  Created by Charles Legrand on 01/02/2019.
 //  Copyright © 2020-present Axance Technology. All rights reserved.
@@ -19,9 +19,9 @@ class RecordInterceptor: PluginType {
             let mockFileURL = mockFileName.mockFileUrl
             do {
                 try body.write(to: mockFileURL, atomically: true, encoding: .utf8)
-                print("Echo: write mock json file to \(mockFileURL.path)")
+                print("Replay: write mock json file to \(mockFileURL.path)")
             } catch {
-                print("Echo: failed to write file – bad permissions, bad filename, missing permissions, or more likely it can't be converted to the encoding")
+                print("Replay: failed to write file – bad permissions, bad filename, missing permissions, or more likely it can't be converted to the encoding")
             }
         }
     }
