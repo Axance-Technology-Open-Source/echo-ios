@@ -1,6 +1,6 @@
 //
 //  Utils.swift
-//  Echo
+//  Replay
 //
 //  Created by Charles Legrand on 01/02/2019.
 //  Copyright © 2020-present Axance Technology. All rights reserved.
@@ -14,7 +14,7 @@ enum FileUtils {
     
     fileprivate static var appScenarioMockDirectory: URL {
         var appMockDirectory = FileUtils.appMockDirectory
-        if let scenario = EchoConfig.shared.scenario {
+        if let scenario = ReplayConfig.shared.scenario {
             appMockDirectory.appendPathComponent(scenario)
         }
         return appMockDirectory
@@ -40,7 +40,7 @@ extension String {
     var bundleMockFileURL: URL? {
         guard let mockBundlePath = Bundle.main.path(forResource: FileUtils.mockDirName, ofType: "bundle"),
             let mockBundle = Bundle(path: mockBundlePath),
-            let path = mockBundle.path(forResource: self, ofType: "", inDirectory: EchoConfig.shared.scenario) else {
+            let path = mockBundle.path(forResource: self, ofType: "", inDirectory: ReplayConfig.shared.scenario) else {
                 return nil
         }
         

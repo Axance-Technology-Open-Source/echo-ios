@@ -1,6 +1,6 @@
 //
 //  MoyaMockableConfig.swift
-//  Echo
+//  Replay
 //
 //  Created by Charles Legrand on 01/02/2019.
 //  Copyright © 2020-present Axance Technology. All rights reserved.
@@ -9,10 +9,10 @@
 import Foundation
 import Moya
 
-public extension EchoConfig {
+public extension ReplayConfig {
     
     var plugin: PluginType {
-        switch EchoConfig.shared.type {
+        switch ReplayConfig.shared.type {
         case .record:
             return RecordInterceptor()
             

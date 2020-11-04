@@ -1,5 +1,5 @@
 //
-//  AlamofireEchoSessionDelegate.swift
+//  AlamofireReplaySessionDelegate.swift
 //  Echo
 //
 //  Created by Charles Legrand on 20/02/2020.
@@ -8,7 +8,7 @@
 
 import Alamofire
 
-class AlamofireEchoSessionDelegate: SessionDelegate {
+class AlamofireReplaySessionDelegate: SessionDelegate {
     
     override func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
         let customData = Data("test 3".utf8)
