@@ -13,10 +13,11 @@
 		3A93A7FC221AFEEA00947D0F /* ReplayInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A93A7FB221AFEEA00947D0F /* ReplayInterceptor.swift */; };
 		3A93A802221AFFC500947D0F /* MoyaEchoConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A93A801221AFFC500947D0F /* MoyaEchoConfig.swift */; };
 		3A93A804221AFFC900947D0F /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A93A803221AFFC900947D0F /* FileUtils.swift */; };
-		3D9A94514B861CA3229DE828 /* libPods-Echo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47629CCD633B3AB615508E0A /* libPods-Echo.a */; };
+		D8FCEC717429D8ABFCA1AEF3 /* libPods-Replay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0E1AB1D6E221821C11663D /* libPods-Replay.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A0E1AB1D6E221821C11663D /* libPods-Replay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Replay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A264D7523FDA15100D2A91B /* ReplayConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayConfig.swift; sourceTree = "<group>"; };
 		3A264D7E23FE90D500D2A91B /* AlamofireReplaySessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireReplaySessionDelegate.swift; sourceTree = "<group>"; };
 		3A6BD63022044E400050CE90 /* Replay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Replay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,9 +26,8 @@
 		3A93A7FB221AFEEA00947D0F /* ReplayInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplayInterceptor.swift; sourceTree = "<group>"; };
 		3A93A801221AFFC500947D0F /* MoyaEchoConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaEchoConfig.swift; sourceTree = "<group>"; };
 		3A93A803221AFFC900947D0F /* FileUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
-		47629CCD633B3AB615508E0A /* libPods-Echo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Echo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		934A77C6373A4F3BCC139CA7 /* Pods-Echo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Echo.debug.xcconfig"; path = "Target Support Files/Pods-Echo/Pods-Echo.debug.xcconfig"; sourceTree = "<group>"; };
-		DC57C477E261EFFE33ACF710 /* Pods-Echo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Echo.release.xcconfig"; path = "Target Support Files/Pods-Echo/Pods-Echo.release.xcconfig"; sourceTree = "<group>"; };
+		AA7AD7D6EC56FC78AC1A3EB6 /* Pods-Replay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Replay.release.xcconfig"; path = "Target Support Files/Pods-Replay/Pods-Replay.release.xcconfig"; sourceTree = "<group>"; };
+		BAD4F9C0F1EF80670A178E51 /* Pods-Replay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Replay.debug.xcconfig"; path = "Target Support Files/Pods-Replay/Pods-Replay.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,21 +35,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9A94514B861CA3229DE828 /* libPods-Echo.a in Frameworks */,
+				D8FCEC717429D8ABFCA1AEF3 /* libPods-Replay.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		342A6E77EFA89CB2C97A90A1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				47629CCD633B3AB615508E0A /* libPods-Echo.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		3A264D7223FD956900D2A91B /* Moya */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,7 +66,7 @@
 				3A6BD63222044E400050CE90 /* Replay */,
 				3A6BD63122044E400050CE90 /* Products */,
 				EA1DA48A10806151E4533B56 /* Pods */,
-				342A6E77EFA89CB2C97A90A1 /* Frameworks */,
+				60D4CEB7FAF8D64D51915FF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +90,19 @@
 			path = Replay;
 			sourceTree = "<group>";
 		};
+		60D4CEB7FAF8D64D51915FF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A0E1AB1D6E221821C11663D /* libPods-Replay.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EA1DA48A10806151E4533B56 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				934A77C6373A4F3BCC139CA7 /* Pods-Echo.debug.xcconfig */,
-				DC57C477E261EFFE33ACF710 /* Pods-Echo.release.xcconfig */,
+				BAD4F9C0F1EF80670A178E51 /* Pods-Replay.debug.xcconfig */,
+				AA7AD7D6EC56FC78AC1A3EB6 /* Pods-Replay.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -124,7 +124,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A6BD63822044E400050CE90 /* Build configuration list for PBXNativeTarget "Replay" */;
 			buildPhases = (
-				76411942B32452B9F2C1C029 /* [CP] Check Pods Manifest.lock */,
+				CCD405B17A820A5E33BC673A /* [CP] Check Pods Manifest.lock */,
 				3A6BD62B22044E400050CE90 /* Headers */,
 				3A6BD62C22044E400050CE90 /* Sources */,
 				3A6BD62D22044E400050CE90 /* Frameworks */,
@@ -182,7 +182,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		76411942B32452B9F2C1C029 /* [CP] Check Pods Manifest.lock */ = {
+		CCD405B17A820A5E33BC673A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -197,7 +197,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Echo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Replay-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -347,7 +347,7 @@
 		};
 		3A6BD63922044E400050CE90 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 934A77C6373A4F3BCC139CA7 /* Pods-Echo.debug.xcconfig */;
+			baseConfigurationReference = BAD4F9C0F1EF80670A178E51 /* Pods-Replay.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -377,7 +377,7 @@
 		};
 		3A6BD63A22044E400050CE90 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC57C477E261EFFE33ACF710 /* Pods-Echo.release.xcconfig */;
+			baseConfigurationReference = AA7AD7D6EC56FC78AC1A3EB6 /* Pods-Replay.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";

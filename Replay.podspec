@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   override json files on asset folder by following file nomenclature!
   EOS
 
-  s.homepage     = "https://github.com/Axance-Technology-Open-Source/echo-ios" 
+  s.homepage     = "https://github.com/Axance-Technology-Open-Source/replay-ios" 
   s.license      = { :type => "MIT", :file => "License.md" }
   s.author       = { "Charles Legrand" => "charles.legrand@devoteam.com" }
   s.source       = { :git => "https://github.com/Axance-Technology-Open-Source/replay-ios.git", :tag => "#{s.version}" }

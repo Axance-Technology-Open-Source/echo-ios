@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_EchoVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_EchoVersionString[];
+FOUNDATION_EXPORT double Pods_ReplayVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_ReplayVersionString[];
 
