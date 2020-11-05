@@ -18,7 +18,7 @@ class DataManager {
 //        networkProvider = NetworkAlamofireProvider()
     }
     
-    func getProfile(success: ((String) -> Void)?) {
-        networkProvider.getProfile(success: success)
+    func getProfile(replayMode: ReplayMode, success: ((String) -> Void)?) {
+        networkProvider.getProfile(replayMode: replayMode, success: success)
     }
 }

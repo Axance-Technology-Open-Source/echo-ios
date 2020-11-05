@@ -21,7 +21,7 @@ class NetworkAlamofireProvider: NetworkProviderProtocol {
                        interceptor: interceptors)
     }()
     
-    func getProfile(success: ((String) -> Void)?) {
+    func getProfile(replayMode: ReplayMode, success: ((String) -> Void)?) {
         session.request("https://ddf-starter-main-api.herokuapp.com/profile")
             .responseJSON { response in
                 if let data = response.data, let responseString = String(data: data, encoding: .utf8) {

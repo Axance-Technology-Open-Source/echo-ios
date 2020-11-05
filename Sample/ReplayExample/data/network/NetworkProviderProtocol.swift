@@ -8,7 +8,11 @@
 
 import Foundation
 
+enum ReplayMode {
+    case none, record, replay
+}
+
 protocol NetworkProviderProtocol {
     
-    func getProfile(success: ((String) -> Void)?)
+    func getProfile(replayMode: ReplayMode, success: ((String) -> Void)?)
 }

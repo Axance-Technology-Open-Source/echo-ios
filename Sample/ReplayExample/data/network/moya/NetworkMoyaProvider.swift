@@ -23,7 +23,16 @@ class NetworkMoyaProvider: NetworkProviderProtocol {
         provider = MoyaProvider<NetworkMoyaService>(plugins: [authPlugin, replayPlugin])
     }
     
-    func getProfile(success: ((String) -> Void)?) {
+    func getProfile(replayMode: ReplayMode, success: ((String) -> Void)?) {
+        switch replayMode {
+        case .none:
+            ReplayConfig.shared.setup(.none)
+        case .record:
+            ReplayConfig.shared.setup(.record)
+        case .replay:
+            ReplayConfig.shared.setup(.replay)
+        }
+        
         provider.request(.getProfile) { result in
             switch result {
             case .success(let response):
