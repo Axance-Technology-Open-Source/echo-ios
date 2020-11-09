@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "Replay"
-  s.version      = "0.0.1-beta0"
+  s.version      = "0.0.1-beta1"
 
   s.summary      = "Replay: Record & Replay JSON webservices responses easily!"
   s.description  = <<-EOS
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
 
   s.swift_version = "5"
   s.platform      = :ios  
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files  = "Replay/*.{swift}"
 
