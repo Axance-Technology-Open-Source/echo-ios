@@ -1,0 +1,6 @@
+module Pods_Replay {
+  umbrella header "Pods-Replay-umbrella.h"
+
+  export *
+  module * { export * }
+}
